@@ -13,7 +13,7 @@ type UsuarioType = {
   name:string,
   email:string,
   created_at:string,
-  update_at:string 
+  updated_at:string 
 }
 function App() {
   const [produtos, setProdutos] = useState<ProdutoType[]> ([])
@@ -60,7 +60,7 @@ function App() {
               <h1>{user.name}</h1>
               <p>{user.email}</p>
               <p>{user.created_at}</p>
-              <p>{user.update_at}</p>
+              <p>{user.updated_at}</p>
             </div>
           )
         })
